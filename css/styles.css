@@ -62,7 +62,7 @@ p {
 
 button {
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-color: #003882;
     padding: 15px 40px 15px 40px;
     color: white;
@@ -72,17 +72,14 @@ button {
     box-shadow: 1px 1px 1px 1px #005A9C;
 }
 
-a:link {
+a:link, a:visited {
     text-decoration: none;
     color: #003882;
-    font-weight: bold;
-    border-style: none;
 }
 
-a:visited {
-    color: #003882;
-    border-style: none;
-}
+a:hover, a:active, a:focus {
+    outline: 0;
+  }
 
 #letsDoThis {
     margin-bottom: 20px;
@@ -112,7 +109,7 @@ input {
 #one, #two, #three {
     display: flex;
     justify-content: space-between;
-    padding-right: 10rem;
+    padding-right: 4em;
     padding-bottom: 15px;
     line-height: 24px;
 }
@@ -123,4 +120,8 @@ input {
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     margin-bottom: 20px;
 
+}
+
+#btn p {
+    font-size: 1rem;
 }
