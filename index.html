@@ -27,51 +27,65 @@
 
         <section class="right-side"> <!--div for right side of content with form sign up-->
             <div id = "firstDiv">
-                <p class="text">There will be a new day, and, eventually, a new year, 
+                <p>There will be a new day, and, eventually, a new year, 
                     and when the upcoming winter gives way to spring, ooh, rest assured, once again, 
                     it will be time for Dodger baseball. 
                     
-                    <br>-Vin Scully 
+                    <br> <p id="vin">-Vin Scully</p>
 
                     <br><br>
-                   Join Our Fan Club! 
+                   <p>Join Our Fan Club!</p>
                 </p>
             </div>
 
-            <div>
-                <p class="text">Let's do this!</p>
+            <div id="secondDiv">
                 <form>
-                    <div>
-                        <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" id="firstName">
+                    <div id="fields">
+                    <p id="letsDoThis">Let's do this!</p>
+                    
+                        <div id="one">
+                            <div id="firstName">
+                                <label for="firstName">First Name</label>
+                                <input type="text" name="firstName" id="firstName">
+                            </div>
+                            <div id="lastName">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" name="lastName" id="lastName">
+                            </div>
+                        </div>
 
-                        <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" id="lastName">
+                        <div id="two">
+                            <div id="email">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div id="phone">
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="tel" name="phoneNumber" id="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                placeholder="888-888-8888">
+                            </div>  
+                        </div>
+
+                        <div id="three">
+                            <div id="password">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" required>
+                            </div>
+
+                            <div id="confirmPassword">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" name="confirmPassword" id="confirmPassword" required>
+                            </div>
+                        </div>
+
                     </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
 
-                        <label for="phoneNumber">Phone Number</label>
-                        <input type="tel" name="phoneNumber" id="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                        placeholder="888-888-8888">
-                    </div>
-
-                    <div>
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required>
-                        
-                        <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" name="confirmPassword" id="confirmPassword" required>
-                    </div>
-
-                    <div>
+                    <div id="btn">
                         <button type="submit">Create Account</button>
                         <p>Already have an account? <a href="#">Log in</a></p>
                     </div>
+
                 </form>
-
-
             </div>
 
         </section>

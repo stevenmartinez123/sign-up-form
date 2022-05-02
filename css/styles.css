@@ -22,7 +22,7 @@ main {
     background-color: rgba(0,0,0,0.15);
 }
 #photoSource {
-    color: white;
+    color: #FFEEE6;
     position: absolute;
     bottom: 5px;
     left: 150px;
@@ -37,19 +37,27 @@ text-decoration: underline;
     display: flex;
     flex-direction: column;
     padding-right: 120px;
-    padding-left: 40px;
+    padding-left: 50px;
+    background-color: #c3d2da;
 }
 
-.text {
+p {
     font-family: Roboto;
-    line-height: 1.75rem;
-    font-size: 18px;
+    line-height: 2.2rem;
+    font-size: 1.5rem;
+    color: #231a39;
 }
 
 #firstDiv {
-    padding-top: 8em;
-    padding-bottom: 50px;
+    padding-top: 9em;
+    margin-bottom: 50px;
 
+}
+
+#vin {
+    margin-top: 20px;
+    text-align: right;
+    padding-right: 20px;
 }
 
 button {
@@ -61,10 +69,58 @@ button {
     background-repeat: no-repeat;
     border-radius: 5px;
     font-weight: bold;
+    box-shadow: 1px 1px 1px 1px #005A9C;
 }
 
 a:link {
     text-decoration: none;
     color: #003882;
     font-weight: bold;
+    border-style: none;
+}
+
+a:visited {
+    color: #003882;
+    border-style: none;
+}
+
+#letsDoThis {
+    margin-bottom: 20px;
+}
+
+form :focus {
+    outline: none;
+    border: 1px solid #005A9C;
+    box-shadow: .5px .5px .5px .5px #005A9C;
+}
+
+
+label, input {
+    display: flex;
+    font-family: Roboto;
+}
+label {
+    font-size: small;
+    text-transform: uppercase;
+}
+input {
+    border-radius: 5px;
+    height: 25px;
+    width: 225px;
+}
+
+#one, #two, #three {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10rem;
+    padding-bottom: 15px;
+    line-height: 24px;
+}
+
+#fields {
+    padding: 20px;
+    background-color: #fff2e6;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    margin-bottom: 20px;
+
 }
