@@ -77,10 +77,6 @@ a:link, a:visited {
     color: #003882;
 }
 
-a:hover, a:active, a:focus {
-    outline: 0;
-  }
-
 #letsDoThis {
     margin-bottom: 20px;
 }
@@ -90,7 +86,6 @@ form :focus {
     border: 1px solid #005A9C;
     box-shadow: .5px .5px .5px .5px #005A9C;
 }
-
 
 label, input {
     display: flex;
@@ -119,7 +114,6 @@ input {
     background-color: #fff2e6;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     margin-bottom: 20px;
-
 }
 
 #btn p {
